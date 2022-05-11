@@ -1,13 +1,13 @@
-package com.example.spring5webapp;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring5webappApplication {
+public class Assignment1CreateANewSpringBootProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Spring5webappApplication.class, args);
+		SpringApplication.run(Assignment1CreateANewSpringBootProjectApplication.class, args);
 	}
 
 }

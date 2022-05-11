@@ -1,10 +1,10 @@
-package com.example.spring5webapp;
+package com.example;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Spring5webappApplicationTests {
+class Assignment1CreateANewSpringBootProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
