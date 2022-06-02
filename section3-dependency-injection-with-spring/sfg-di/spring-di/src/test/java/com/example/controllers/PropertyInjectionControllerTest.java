@@ -21,18 +21,19 @@ class PropertyInjectionControllerTest {
     String expected;
     @BeforeEach
     void setUp() {
-        expected = "Property Injection: Hello, World!";
         controller = new PropertyInjectionController();
         controller.greetingService = new GreetingServiceEnglish();
     }
 
     @Test
     void getGreetingManuallyInjecting() {
+        expected = "Property Injection: Hello, World!";
         assertEquals(expected, controller.getGreeting());
     }
 
     @Test
     void getGreetingSpringDependencyInjection() {
+        expected = "Property Injection: Hello, World!  From Property Service.";
         controller = context.getBean("propertyInjectionController", PropertyInjectionController.class);
         assertEquals(expected, controller.getGreeting());
     }

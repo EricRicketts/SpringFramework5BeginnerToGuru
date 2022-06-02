@@ -21,17 +21,18 @@ class ConstructorInjectionControllerTest {
     String expected;
     @BeforeEach
     void setUp() {
-        expected = "Constructor Injection: Hello, World!";
         controller = new ConstructorInjectionController(new GreetingServiceEnglish());
     }
 
     @Test
     void sayGreetingManuallyInjecting() {
+        expected = "Constructor Injection: Hello, World!";
         assertEquals(expected, controller.getGreeting());
     }
 
     @Test
     void sayGreetingSpringDependencyInjection() {
+        expected = "Constructor Injection: Hello, World!  From Constructor Service.";
         controller = context.getBean("constructorInjectionController", ConstructorInjectionController.class);
         assertEquals(expected, controller.getGreeting());
     }
