@@ -19,8 +19,6 @@ class SpringDiApplicationTests {
 
     @Test
     public void contextLoads() {
-        MyController controller = context.getBean("myController", MyController.class);
-        assertEquals("Hi, Folks!", controller.sayHello());
     }
 
 }

@@ -13,8 +13,9 @@ public class SpringDiApplication {
 
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(SpringDiApplication.class, args);
+        System.out.println("----------------- Primary Injection");
         MyController myController = ctx.getBean("myController", MyController.class);
-        System.out.println(myController.sayHello());
+        System.out.println(myController.getGreeting());
 
         System.out.println("----------------- Property Injection");
         PropertyInjectionController propertyInjectionController =
