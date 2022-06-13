@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Component Scan</title>
+</head>
+<body>
+    <h1>List Of People</h1>
+    <ul th:each="person:${people}">
+        <li th:text="${person.firstName}">First Name</li>
+        <li th:text="${person.lastName}">Last Name</li>
+        <li th:text="${person.age}">age</li>
+    </ul>
+</body>
+</html>
