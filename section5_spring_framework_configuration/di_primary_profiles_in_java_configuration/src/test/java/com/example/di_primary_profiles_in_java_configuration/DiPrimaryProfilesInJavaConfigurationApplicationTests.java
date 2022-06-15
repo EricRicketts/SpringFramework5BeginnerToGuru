@@ -57,7 +57,7 @@ class DiPrimaryProfilesInJavaConfigurationApplicationTests {
         Map.Entry<String, Teacher> entry = secondStudent.getCourse("Mathematics");
         assertTrue(entry.getValue() instanceof Teacher);
     }
-    
+
     @Test
     void testSecondTeacher() {
         assertTrue(secondTeacher.getStudent(0) instanceof Student);
