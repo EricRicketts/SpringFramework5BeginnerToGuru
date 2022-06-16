@@ -1,0 +1,14 @@
+spring:
+    profiles:
+        active: [dog, EN, prod]
+guru:
+    username: YamlUsername
+    password: YamlPassword
+    jdbcurl: YamlJdbcUrl
+---
+spring:
+    profiles: prod
+guru:
+    username: YamlProdUsername
+    password: YamlProdPassword
+    jdbcurl: YamlProdJdbcUrl
